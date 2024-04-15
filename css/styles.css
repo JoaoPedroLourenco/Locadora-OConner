@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background: #1c1c1c;
+}
+
+
+/*--- HEADER ---*/
+header{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: fixed;
+    z-index: 9999;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+header > .logo{
+    width: 20%;
+}
+
+header > nav > .logo > img{
+    width: 150px;
+}
+
+header > .login{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-right: -50px;
+}
+
+.login > a{
+    width: 120px;
+    height: 30px;
+    border: 2px solid #1b73f870;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    transition: .2s;
+}
+
+.login > a:nth-child(2){
+    border: none;
+    background: #1b73f870
+}
+
+.login > a:nth-child(2):hover{
+    background: #4089ff70;
+}
+
+.login > a:nth-child(2):active{
+    background: #0248b070;
+}
+
+.login > a:hover{
+    background: #0f68ee70;
+}
+
+.login > a:active{
+    background: #0248b070;
+}
+
+
+header > nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+header > nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+
+header > nav > ul > li{
+    font-size: 1.3em;
+    color: white;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+li > a:hover{
+    border-bottom: 2px solid #1b73f870;
+
+}
+
+/*--- HEADER ---*/
+
+
+
+/*--- MAIN ---*/
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}
+
+
+.circle{
+    background: #0f68ee6b;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(10rem);
+    position: absolute;
+    z-index: 0;
+    left: 62%;
+    top: 10%;
+}
+
+
+main > .lado-esq{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.lado-esq > .btns{
+    margin-top: 40px;
+    margin-bottom: -100px;
+}
+
+.btns > a > button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #0f68ee70;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 1.1em;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btns > a > button:hover{
+    background: #0f68ee70;
+}
+
+.btns > a > button:active{
+    background: #0248b070;
+}
+
+.lado-esq > h1{
+    font-size: 3.5em;
+    margin-top: -20%;
+    max-width: 800px;
+    color: white;
+}
+
+
+main > .lado-dir{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-dir > img{
+    width: 900px;
+    z-index: 9999;
+    position: absolute;
+    left:45%;
+    top: 20%;
+}
+
+/*--- MAIN ---*/
+
+
+
+/*--- SECTION ---*/
+
+.sobre-texto{
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+}
+
+#section-1{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+
+.circle2{
+    background: #0f68ee6b;
+    width: 600px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(10rem);
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    top: 130%;
+}
+
+
+#section-1 > .lado-esq-sobre{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-esq-sobre > img{
+    width: 800px;
+}
+
+#section-1 > .lado-dir-sobre{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-dir-sobre > p{
+    font-size: 1.5em;
+    color: white;
+    max-width: 800px;
+    line-height: 35px;
+    text-align: start;
+}
+
+/*--- Section 2 ---*/
+
+#section-2{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+
+#section-2 > .lado-esq-spin{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.lado-esq-spin > .content-spin > h1{
+    margin-top: -200px;
+    margin-bottom: 50px;
+    font-size: 3.5em;
+    color: white;
+}
+
+.content-spin > .info > p{
+    font-size: 2em;
+    color: white;
+}
+
+.content-spin > a > button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 50px;
+    color: white;
+    font-size: 1.2em;
+    background: none;
+    border: 2px solid #1b73f870;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.content-spin > a > button:hover{
+    background: #0f68ee70;
+}
+
+.content-spin > a > button:active{
+    background: #0248b070
+}   
+
+#section-2 > .lado-dir-spin{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.circle3{
+    background: #0f68ee6b;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(10rem);
+    position: absolute;
+    z-index: -1;
+    left: 68%;
+    top: 200%;
+}
