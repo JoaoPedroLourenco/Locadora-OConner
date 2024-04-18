@@ -22,7 +22,7 @@
 <section id="section-1">
 
     <div class="lado-esq-sobre">
-        <img src="imgs/image16.png" alt="">
+        <img src="imgs/carros.png" alt="">
         <div class="circle2"></div>
     </div>
 

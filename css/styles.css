@@ -20,10 +20,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0% 2%;
     position: fixed;
     z-index: 9999;
-    background: transparent;
+    background: linear-gradient(to bottom, black -120%, rgba(0, 0, 0, 0)) 0%;
     backdrop-filter: blur(10px);
 }
 
@@ -31,7 +31,7 @@ header > .logo{
     width: 20%;
 }
 
-header > nav > .logo > img{
+header > .logo > img{
     width: 150px;
 }
 
@@ -101,14 +101,16 @@ header > nav > ul > li{
 li > a{
     text-decoration: none;
     color: white;
+    transition: .15s;
 }
 
 li > a:hover{
-    border-bottom: 2px solid #1b73f870;
-
+    color: #0f68eec0;
 }
 
 /*--- HEADER ---*/
+
+
 
 
 
@@ -131,7 +133,7 @@ main{
     border-radius: 50%;
     filter: blur(10rem);
     position: absolute;
-    z-index: 0;
+    z-index: -2;
     left: 62%;
     top: 10%;
 }
@@ -189,10 +191,10 @@ main > .lado-dir{
 
 .lado-dir > img{
     width: 900px;
-    z-index: 9999;
     position: absolute;
     left:45%;
     top: 20%;
+    z-index: -1;
 }
 
 /*--- MAIN ---*/
@@ -205,6 +207,7 @@ main > .lado-dir{
     text-align: center;
     color: white;
     font-size: 3.5em;
+    margin-bottom: -50px;
 }
 
 #section-1{
@@ -326,4 +329,129 @@ main > .lado-dir{
     z-index: -1;
     left: 68%;
     top: 200%;
+}
+
+
+@media (max-width: 1024px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/*------------------------------------------------ */
+
+.container-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    color: white;
+    overflow: hidden;
+}
+
+.texto-cadastro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: -80px;
+}
+
+.texto-cadastro > h1{
+    font-size: 5em;
+}
+
+.texto-cadastro > p{
+    font-size: 2em;
+}
+
+.container-cadastro > .form-cadastro{
+    width: 50em;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-cadastro > input{
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-cadastro > label{
+    margin: 5px;
+}
+
+.form-cadastro > .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-cadastro > .submit > #submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#0f68eec0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-cadastro > .submit > #submit:hover{
+   background-color: #0248b070;
+}
+
+
+.circle-cadastro1{
+    background: #0f68ee6b;
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(4rem);
+    position: absolute;
+    z-index: -1;
+    left: -15%;
+    top: -15%;
+}
+
+
+
+/*--------------------------------------------*/
+
+
+.error-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.error-container > i{
+    color: white;
+    font-size: 4em;
 }

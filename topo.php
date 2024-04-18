@@ -8,13 +8,10 @@
 </head>
 <body>
         <header>
-           
-           
-
-            <nav>
-            <div class="logo">
+        <div class="logo">
                <img src="imgs/O_Conner-removebg-preview 1.png" alt="">
-           </div>
+        </div>
+            <nav>
                <ul>
                    <li><a href="index.php?p=1">Home</a></li>
                    <li><a href="index.php?p=2">Catálogo</a></li>
@@ -23,7 +20,7 @@
             </nav>
 
            <div class="login">
-                <a href="index.php?php=4">Login</a>
-                <a href="index.php?php=5">Cadastrar</a>
+                <a href="index.php?p=4">Login</a>
+                <a href="index.php?p=5">Cadastrar</a>
            </div>
        </header>
