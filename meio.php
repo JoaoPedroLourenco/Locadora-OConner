@@ -49,7 +49,7 @@
     </div>
 
     <div class="lado-dir-spin">
-        <img src="imgs/image15.png" alt="">
+        <img src="imgs/image15.png" style="width: 800px;" alt="">
         <div class="circle3"></div>
     </div>
 </section>

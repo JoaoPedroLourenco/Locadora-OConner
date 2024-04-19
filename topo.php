@@ -9,7 +9,7 @@
 <body>
         <header>
         <div class="logo">
-               <img src="imgs/O_Conner-removebg-preview 1.png" alt="">
+               <img src="imgs/Logo.png" alt="">
         </div>
             <nav>
                <ul>

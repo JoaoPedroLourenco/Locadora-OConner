@@ -20,7 +20,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 2%;
+    padding: 0px 20px;
     position: fixed;
     z-index: 9999;
     background: linear-gradient(to bottom, black -120%, rgba(0, 0, 0, 0)) 0%;
@@ -29,6 +29,7 @@ header{
 
 header > .logo{
     width: 20%;
+    margin-top: 20px;
 }
 
 header > .logo > img{
@@ -41,7 +42,6 @@ header > .login{
     align-items: center;
     justify-content: center;
     gap: 1em;
-    margin-right: -50px;
 }
 
 .login > a{
@@ -236,6 +236,7 @@ main > .lado-dir{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
 }
 
 .lado-esq-sobre > img{
@@ -248,6 +249,7 @@ main > .lado-dir{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 30px;
 }
 
 .lado-dir-sobre > p{
@@ -255,7 +257,7 @@ main > .lado-dir{
     color: white;
     max-width: 800px;
     line-height: 35px;
-    text-align: start;
+    text-align: end;
 }
 
 /*--- Section 2 ---*/
@@ -332,15 +334,6 @@ main > .lado-dir{
 }
 
 
-@media (max-width: 1024px) {
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-
-
 
 
 
@@ -363,7 +356,8 @@ main > .lado-dir{
     display: flex;
     flex-direction: column;
     gap: .5em;
-    margin-top: -80px;
+    margin-top: 0px;
+    margin-bottom: -50px;
 }
 
 .texto-cadastro > h1{
@@ -376,10 +370,11 @@ main > .lado-dir{
 
 .container-cadastro > .form-cadastro{
     width: 50em;
-    height: 50%;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: -20px;
 }
 
 .form-cadastro > input{
@@ -399,7 +394,7 @@ main > .lado-dir{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .form-cadastro > .submit > #submit{
@@ -448,10 +443,197 @@ input:focus{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
 }
 
 .error-container > i{
     color: white;
     font-size: 4em;
+    margin-top: 50px;
+}
+
+
+/*-------------------------------------------------------------*/
+
+.container-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    color: white;
+    overflow: hidden;
+}
+
+.texto-login{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: 0px;
+    margin-bottom: -100px;
+}
+
+.texto-login > h1{
+    font-size: 5em;
+}
+
+.texto-login > p{
+    font-size: 3em;
+}
+
+.container-login > .form-login{
+    width: 50em;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-login > input{
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-login > label{
+    margin: 5px;
+}
+
+.form-login > .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-login > .submit > #submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#0f68eec0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-login > .submit > #submit:hover{
+   background-color: #0248b070;
+}
+
+
+.circle-login1{
+    background: #0f68ee6b;
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(4rem);
+    position: absolute;
+    z-index: -1;
+    left: -15%;
+    top: -15%;
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+.container-faleConosco{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    color: white;
+    overflow: hidden;
+}
+
+.form-faleConosco{
+    width: 50em;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-faleConosco > input{
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-faleConosco > label{
+    margin: 5px;
+}
+
+.form-faleConosco > textarea{
+    border-radius: 10px;
+    resize: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.form-faleConosco > .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-faleConosco > .submit > #submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#0f68eec0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-faleConosco > .submit > #submit:hover{
+   background-color: #0248b070;
+}
+
+
+/*-----------------------------------------------------*/
+
+.rodape{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+.rodape > p{
+    margin-top: -20px;
 }
