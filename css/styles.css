@@ -7,6 +7,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
     background: #1c1c1c;
@@ -22,8 +26,9 @@ header{
     align-items: center;
     padding: 0px 20px;
     position: fixed;
+    left: 1.5%;
+    top: 0;
     z-index: 9999;
-    background: linear-gradient(to bottom, black -120%, rgba(0, 0, 0, 0)) 0%;
     backdrop-filter: blur(10px);
 }
 
@@ -563,7 +568,7 @@ input:focus{
 
 .form-faleConosco{
     width: 50em;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -587,6 +592,7 @@ input:focus{
     resize: none;
     font-size: 20px;
     padding: 5px 10px;
+    border: none;
 }
 
 textarea:focus{
@@ -637,3 +643,467 @@ input:focus{
 .rodape > p{
     margin-top: -20px;
 }
+
+
+/*--------------------------------------------------------------*/
+
+.container-catalogo{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container-catalogo > .title-button {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    gap: 2em;
+}
+
+.container-catalogo > .title-button > h1{
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.container-catalogo > .title-button > a > button{
+    width: 200px;
+    height: 40px;
+    background: #0F68EE;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.container-catalogo > .title-button > a > button:hover{
+    background: #1E4177;
+}
+
+
+.cards-carros{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -120px;
+}
+
+.carro-catalogo{
+    width: 500px;
+    height: 650px;
+    display: flex;
+    background: #01337d16;
+    flex-direction: column;
+    border: 2px solid #0f68eec0;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.carro-catalogo > .topo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carro-catalogo > .topo > img{
+    width: 500px;
+    margin-top: -10px;
+}
+
+.carro-catalogo > .baixo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.baixo > h3{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    font-weight: 500;
+    color: #0F68EE;
+    font-size: 2.5em;
+}
+
+.baixo > .info-carro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.info-carro > .icon-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.baixo > .info-mais{
+    margin-top: 30px;
+    width: 85%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.baixo > .info-mais > .possui > p{
+    font-size: 1.5em;
+}
+
+.baixo > .btn-preco{
+    width: 60%;
+    height: 5%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-preco > p{
+    font-size: 1.5em;
+}
+
+.btn-preco > a > button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #0F68EE;
+    color: white;
+    font-size: 1em;
+    transition: .1s;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-preco > a > button:hover{
+    background: #1E4177;
+}
+
+/*------------------------------------------------------------------------------*/
+
+.container-cadastroItem{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container-cadastroItem > .image-box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0F68EE;
+    border-radius: 15px;
+   
+}
+
+.image-box > p{
+    font-size: 1.2em;
+    opacity: 50%;
+    text-decoration: underline;
+    user-select: none;
+}
+
+
+.form-cadastroItem{
+    width: 50em;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-cadastroItem > input{
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-cadastroItem > label{
+    margin: 5px;
+}
+
+.form-cadastroItem > .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-cadastroItem > .submit > #submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#0f68eec0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-cadastroItem > .submit > #submit:hover{
+   background-color: #0248b070;
+}
+
+/*---------------------------------------------------------------------*/
+
+.container-alugar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.form-alugar{
+    width: 50em;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.form-alugar > input{
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-alugar > label{
+    margin: 5px;
+}
+
+.form-alugar > .cep-num{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cep-num > .inputs-aluguel{
+    display: flex;
+    flex-direction: column;
+}
+
+.cep-num > .inputs-aluguel > input{
+    margin-bottom: 10px;
+    width: 380px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cep-num > .inputs-aluguel > label{
+    margin: 5px;
+}
+
+.form-alugar > .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.submit > a > button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#0f68eec0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit > a > button:hover{
+   background-color: #0248b070;
+}
+
+/*---------------------------------------------------------*/
+
+.container-pagamento{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    color: white;
+}
+
+.form-pagamento{
+    width: 50em;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-pagamento > input{
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-pagamento > label{
+    margin: 5px;
+}
+
+.form-pagamento > .data-cvv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-cvv > .inputs-pagamento{
+    display: flex;
+    flex-direction: column;
+}
+
+.data-cvv > .inputs-pagamento > input{
+    margin-bottom: 10px;
+    width: 380px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.data-cvv > .inputs-pagamento > label{
+    margin: 5px;
+}
+
+#codigoInput{
+    width: 300px;
+}
+
+#numCartaoInput{
+    width: 500px;
+}
+
+.form-pagamento > .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10em;
+}
+
+.form-pagamento > .submit > a > button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#2a4469;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+.form-pagamento > .submit > a > button:hover{
+    background: #0F68EE;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-pagamento > .submit > #submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color:#0f68eec0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+.form-pagamento> .submit > #submit:hover{
+    background-color: #0248b070;
+ }
+
+.container-pagamento > .valor{ 
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -320px;
+    gap: 10px;
+}
+
+.valor > p{
+    font-size: 1.7em;
+}
+
+ .container-pagamento > .valor > .valor-numero{
+    width: 300px;
+    height: 80px;
+    background: #0F68EE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3em;
+ } 

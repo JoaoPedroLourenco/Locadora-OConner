@@ -3,7 +3,7 @@
         <h1><span style="color: #1653AE;">Alugue</span> carros que suprem sua necessidade com a Locadora <span style="color: #1653AE;">O’</span>Conner</h1>
 
         <div class="btns">
-            <a href="#"><button>Explorar</button></a>
+            <a href="#section-1"><button>Explorar</button></a>
         </div>
     </div>
 
@@ -43,7 +43,7 @@
                 <p>5 Portas</p>
             </div>
             
-            <a href="#"><button>Alugar</button></a>
+            <a href="index.php?p=2"><button>Alugar</button></a>
 
         </div>
     </div>

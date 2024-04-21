@@ -24,7 +24,7 @@
         <input type="password" id="senhaInput" name="nomeInput" required>
 
         <div class="submit">
-            <input type="submit" id="submit" value="Continuar" >
+            <input type="submit" id="submit" value="Confirmar" >
         </div>
         
     </form>
